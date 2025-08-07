@@ -20,6 +20,14 @@ packages:
   gitUsername: rimabarman
   gitBranch: Test2
 services:
+- serviceName: project.siqa_all_test_6aug25.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsertNew
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqa_all_test_6aug25.integrations:AlertsCRTandERT
   packages:
   - name: SIQA_ALL_TEST_6AUG25Project
@@ -60,6 +68,14 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2061
+- serviceName: project.siqa_all_test_6aug25.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
 - serviceName: project.siqa_all_test_6aug25.integrations:deepclonetest
   packages:
   - name: SIQA_ALL_TEST_6AUG25Project
