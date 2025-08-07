@@ -48,6 +48,18 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2061
+- serviceName: project.siqa_all_test_6aug25.integrations:Display_Date
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
 - serviceName: project.siqa_all_test_6aug25.integrations:deepclonetest
   packages:
   - name: SIQA_ALL_TEST_6AUG25Project
