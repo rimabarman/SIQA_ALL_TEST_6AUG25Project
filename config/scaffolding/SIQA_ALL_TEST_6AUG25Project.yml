@@ -8,12 +8,63 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/vijetadixit
   gitUsername: rimabarman
   gitBranch: Test2
+services:
+- serviceName: project.siqa_all_test_6aug25.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
+- serviceName: project.siqa_all_test_6aug25.integrations:Call_TPPService
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
+- serviceName: project.siqa_all_test_6aug25.integrations:deepclonetest
+  packages:
+  - name: SIQA_ALL_TEST_6AUG25Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2061
